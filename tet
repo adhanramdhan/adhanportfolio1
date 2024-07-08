@@ -1,0 +1,43 @@
+mkdir -p resources/views/dashboard
+mkdir -p resources/views/education
+mkdir -p resources/views/experience
+mkdir -p resources/views/home
+mkdir -p resources/views/inc
+mkdir -p resources/views/layouts
+mkdir -p resources/views/profile
+mkdir -p resources/views/setting
+mkdir -p resources/views/user
+
+
+touch resources/views/dashboard/index.blade.php
+touch resources/views/education/create.blade.php
+touch resources/views/education/edit.blade.php
+touch resources/views/education/index.blade.php
+touch resources/views/experience/create.blade.php
+touch resources/views/experience/edit.blade.php
+touch resources/views/experience/index.blade.php
+touch resources/views/home/index.blade.php
+touch resources/views/user/create.blade.php
+touch resources/views/user/edit.blade.php
+touch resources/views/user/index.blade.php
+touch resources/views/setting/index.blade.php
+touch resources/views/layouts/app.blade.php
+touch resources/views/inc/css.blade.php
+touch resources/views/inc/footer.blade.php
+touch resources/views/inc/js.blade.php
+touch resources/views/inc/navbar.blade.php
+touch resources/views/inc/sidebar.blade.php
+touch resources/views/dashboard.blade.php
+touch resources/views/login.blade.php
+
+
+
+
+php artisan make:Controller SettingController
+php artisan make:Controller UserController
+php artisan make:Controller ProfileController
+php artisan make:Controller LoginController
+php artisan make:Controller HomeController
+php artisan make:Controller ExperienceController
+php artisan make:Controller EducationController
+php artisan make:Controller DashboardController

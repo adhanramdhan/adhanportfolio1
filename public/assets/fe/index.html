@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  <title>Ramadhan - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css linka
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Bintang Ramadhan" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Bintang Ramadhan">Bintang Ramadhan</h1>
+
+          <p class="title">Graphic Designer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="https://mail.google.com/mail/u/0/#sent?compose=DmwnWstzVNfhnJbWCTtnrbJSSpZDsWSMSwrFVnhqNwkDsnhNsldLvwQkLJvGJCJzMVczxpDdmKZl" class="contact-link">ramdhan1contact@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="https://api.whatsapp.com/send/?phone=62895415496555&text&type=phone_number&app_absent=0" class="contact-link">+62 895-4154-96555</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2006-09-26"><?php
+                profile
+                ?></time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kemayoran, DKI jakarta, Indonesia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/dhanzvisual/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/channel/UCeZ6jC-oVxNInMSezm0YVZg" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/rmdhnz7/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a Graphic Designer from Jakarta, Indonesia. has experience in the fields of social media design and print media design. 
+            I love turning complex design problems into simple, beautiful, and intuitive ones.
+          </p>
+
+          <p>
+            Currently, I am a multimedia student at PONCOL Vocational School located in Kemayoran, Central Jakarta. 
+            My journey in the field of graphic design began in 2020 where I worked on several projects for amateur 
+            E-Sport teams. I am proficient in using Adobe Photoshop and Figma. I have experience in Adobe Illustrator, 
+            After Effect, Premier Pro and I also know the basics of Programming. I'm enthusiastic about exploring new 
+            opportunities in graphic design, and I'm actively looking for part-time, internship, or even full-time positions.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-company.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Company Profile</h4>
+
+                <p class="service-item-text">
+                  a professional introduction of the business which aims 
+                  to inform the audience about its products and services. 
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-logodesign.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Logo Design</h4>
+
+                <p class="service-item-text">
+                  Creating a unique identity that is easily recognized by the public
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-sports.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Sports Design</h4>
+
+                <p class="service-item-text">
+                  Can make your match schedule much cooler and more interesting
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-printer.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Poster/brosur Design</h4>
+
+                <p class="service-item-text">
+                  I create high quality posters of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SMK PONCOL</h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                Jl. Mutiara Raya No.1, RT.14/RW.3, Sumur Batu, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SMPN 228 Jakarta</h4>
+
+              <span>2018 — 2021</span>
+
+              <p class="timeline-text">
+                Jl. Sumur Batu Raya No.6, RT.11/RW.1, Sumur Batu, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SDN Cempaka Baru 11</h4>
+
+              <span>2012 — 2018</span>
+
+              <p class="timeline-text">
+                Jl. Remaja Raya No.52, RT.5/RW.8, Cemp. Baru, Kec. Kemayoran, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10640
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                FREELANCER SERVICES</h4>
+
+              <span>2020 — Present</span>
+
+              <p class="timeline-text">
+                I am experienced in communicating with my clients. Even though it was during my 
+                amateur years, I think that's enough to show that I have progressed from year to year
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PT.GLORYMITRASUKSES</h4>
+
+              <span>01-04/2023</span>
+
+              <p class="timeline-text">
+                During my 3 month internship period in 2023, I handled several important jobs including 
+                maintaining the company website, designing several feeds for the company's media needs, 
+                taking photos of products to be sold, editing advertising videos for promotional purposes 
+                and creating company logo animations.
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Digital imaging</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">UI/UX Design</h5>
+                <data value="75">75%</data>
+              </div>  
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Vector Image</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Layout Managing (Feed)</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web banner</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Feed Design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Poster Design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-b tn>logo</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>web banner</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>poster design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>feed design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>logo</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="feed design">
+              <a href="./assets/images/project-1.jpg" data-fancybox="portfolio" data-caption="Nike Feed">
+                 <figure class="project-img">
+                    <div class="project-item-icon-box">
+                       <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                 </figure>
+                 <h3 class="project-title">Nike</h3>
+                 <p class="project-category">Feed Design</p>
+              </a>
+           </li>
+           
+
+            <li class="project-item  active" data-filter-item data-category="logo">
+              <a href="./assets/images/project-logo1.png" data-fancybox="portfolio" data-caption="Logo Bareng Gila">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-logo1.png" alt="orizon" loading="lazy">
+                </figure>
+                <h3 class="project-title">Basreng Gila</h3>
+                <p class="project-category">Poster</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="logo">
+              <a href="./assets/images/project-logo2.png" data-fancybox="portfolio" data-caption="Logo GHOSTCRACK">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-logo2.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ghostcrack</h3>
+
+                <p class="project-category">Poster</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="feed design">
+              <a href="./assets/images/project-pkl1.jpg" data-fancybox="portfolio" data-caption="Mb Centaur H81 #1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-pkl1.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mb Centaur H81 #1</h3>
+
+                <p class="project-category">Feed design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="feed design">
+              <a href="./assets/images/project-pkl2.jpg" data-fancybox="portfolio" data-caption="Mb Centaur H81 #2">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-pkl2.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mb Centaur H81 #2</h3>
+
+                <p class="project-category">Feed Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="feed design">
+              <a href="./assets/images/project-pkl3.jpg" data-fancybox="portfolio" data-caption="Mb Centaur H81 #3">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-pkl3.jpg" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mb Centaur H81 #3</h3>
+
+                <p class="project-category">Feed Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web banner">
+              <a href="./assets/images/project-banner1.jpg" data-fancybox="portfolio" data-caption="FC Forza #1-2-3">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-banner1.jpg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FC Forza #1-2-3</h3>
+
+                <p class="project-category">Web Banner</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web banner">
+              <a href="./assets/images/project-banner2.jpg" data-fancybox="portfolio" data-caption="FC Forza #4-5-6">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-banner2.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FC Forza #4-5-6</h3>
+
+                <p class="project-category">Web Banner</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="feed design">
+              <a href="./assets/images/project-hose.jpg" data-fancybox="portfolio" data-caption="Poster Komersil">
+
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-hose.jpg" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Komersil Motherboard</h3>
+
+                <p class="project-category">Feed Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="poster design">
+              <a href="./assets/images/VINICIUS-POSTER.jpg" data-fancybox="portfolio" data-caption="Stroy IG design">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/VINICIUS-POSTER.jpg" alt="orizon" loading="lazy">
+                </figure>
+                <h3 class="project-title">Vinicius Poster</h3>
+                <p class="project-category">Poster</p>
+              </a>
+            </li>
+
+            
+            <li class="project-item  active" data-filter-item data-category="poster design">
+              <a href="./assets/images/project-poster2.jpg" data-fancybox="portfolio" data-caption="Poster World cup 2022">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-poster2.jpg" alt="orizon" loading="lazy">
+                </figure>
+                <h3 class="project-title">QATAR World cup 2022</h3>
+                <p class="project-category">Poster</p>
+              </a>
+            </li>
+
+
+            
+            <li class="project-item  active" data-filter-item data-category="poster design">
+              <a href="./assets/images/project-poster3.jpg" data-fancybox="portfolio" data-caption="Poster Komersil">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-poster3.jpg" alt="orizon" loading="lazy">
+                </figure>
+                <h3 class="project-title">Komersil Emelard Blend </h3>
+                <p class="project-category">Poster</p>
+              </a>
+            </li>
+
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+
+       <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  
+</body>
+
+</html>
